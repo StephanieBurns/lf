@@ -21,6 +21,8 @@ class PurchasesController < ApplicationController
 	end
 
 	def create
+
+		redirect_to purchases_path
 		
 	end
 # Like ramalama ding dong
