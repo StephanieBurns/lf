@@ -1,3 +1,14 @@
-<p> This is the new View file </p>
 
-<%= form_tag do %>
+<%= form_tag '/purchases' do %>
+
+		<p> <%= label_tag 'name' %> <%= text_field_tag 'name' %> </p> 
+		<p> <%= label_tag 'quantity' %> <%= number_field_tag 'quantity' %> </p> 
+		<p> <%= label_tag 'notes' %> <%= text_area_tag 'notes'     %> </p> 
+		<p> <%= label_tag 'added_by', "Added by" %> <%= text_field_tag 'added_by' %> </p> 
+		<p> <%= label_tag 'phone', "Phone number" %> <%= text_field_tag 'phone'   %> </p> 
+		<p> <%= label_tag 'priority' %> <%= select_tag 'priority', "<option>High</option><option>Low</option>" %> </p> 
+		<p> <%= label_tag 'Date Needed' %> <%= date_field_tag 'date_needed' %> </p> 
+
+	<%= submit_tag %>
+
+<% end %>
